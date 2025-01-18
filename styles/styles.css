@@ -55,7 +55,69 @@ background: rgb(224, 44, 109);
     margin-top: 20px;
 }
 
+.offer-title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 70px;
+}
+.offer{
+    color: red;
+}
+.company{
+    justify-content: space-around;
+}
 
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   margin-bottom: 20px;
+   overflow: hidden;
+  
+}
+.card{
+border-radius: 5px;
+box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);
+width: 350px;
+padding-top: 30px;
+text-align: center;
+}
+.card img{
+    width: 80%;
+    border-radius: 5px;
+}
+.checked{
+    color: orange;
+}
+.see-more{
+    text-align:end;
+    padding-right: 40px;
+    color:  rgb(224, 44, 109);
+    margin-bottom: 40px;
+}
+
+.feature{
+    margin-top: 50px;
+   
+    
+}
+.feature-section{
+    gap: 80px;
+   justify-content: center;
+   justify-items: center;
+}
+.feature-section img{
+    /* width: 100%; */
+}
+.feature-description{
+    width: 550px;
+}
+.footer{
+/* width: 262px; */
+text-align: center;
+
+}
 /* responsive section */
 @media screen and (max-width:576px) {
    .nav-links, .nav-bar{
@@ -72,4 +134,22 @@ background: rgb(224, 44, 109);
     .hero-section{
         text-align: center;
     }
+    .company{
+      flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .card-container{
+        grid-template-columns:1fr;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+.feature-section{
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-left: 30px;
+}
+    
 }
